@@ -1,0 +1,20 @@
+-c
+-I"C:/Users/nxf63339/Documents/Differential Probe/Data acquisition/MUX and switches/Control logic/S32K NXP/S32 Projects/freertos_s32k144_NEW/Sources"
+-I"C:/Users/nxf63339/Documents/Differential Probe/Data acquisition/MUX and switches/Control logic/S32K NXP/S32 Projects/freertos_s32k144_NEW/Generated_Code"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/include"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/common"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices"
+-I"C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc"
+-I"C:/Users/nxf63339/Documents/Differential Probe/Data acquisition/MUX and switches/Control logic/S32K NXP/S32 Projects/freertos_s32k144_NEW/Generated_Code/"
+-x assembler-with-cpp
+-DSTART_FROM_FLASH
+-DUSING_OS_FREERTOS
+-g3
+-mcpu=cortex-m4
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=nano.specs
+-specs=nosys.specs
+--sysroot="C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
