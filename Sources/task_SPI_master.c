@@ -25,6 +25,7 @@ void SPITask_Master(void * argument){
 		PINS_DRV_TogglePins(LED_External_GPIO, (1 << LED3_Anton));
 //		OSIF_TimeDelay(2000);
 		osDelay(2000);
+
 	}
 }
 
