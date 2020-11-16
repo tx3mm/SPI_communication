@@ -1,4 +1,4 @@
-SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o: \
+SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.d: \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/device_registers.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/common/s32_core_cm4.h \

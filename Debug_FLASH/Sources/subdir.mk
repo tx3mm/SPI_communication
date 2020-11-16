@@ -8,6 +8,7 @@ C_SRCS += \
 ../Sources/main.c \
 ../Sources/rtos.c \
 ../Sources/task_SPI_master.c \
+../Sources/task_SPI_slave.c \
 ../Sources/util.c 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./Sources/main.o \
 ./Sources/rtos.o \
 ./Sources/task_SPI_master.o \
+./Sources/task_SPI_slave.o \
 ./Sources/util.o 
 
 C_DEPS += \
@@ -22,6 +24,7 @@ C_DEPS += \
 ./Sources/main.d \
 ./Sources/rtos.d \
 ./Sources/task_SPI_master.d \
+./Sources/task_SPI_slave.d \
 ./Sources/util.d 
 
 

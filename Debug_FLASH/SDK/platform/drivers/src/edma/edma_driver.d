@@ -1,4 +1,4 @@
-SDK/platform/drivers/src/edma/edma_driver.o: \
+SDK/platform/drivers/src/edma/edma_driver.d: \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/edma/edma_driver.c \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/edma/edma_irq.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/edma/edma_hw_access.h \

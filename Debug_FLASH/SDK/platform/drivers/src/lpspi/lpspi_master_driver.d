@@ -1,4 +1,4 @@
-SDK/platform/drivers/src/lpspi/lpspi_master_driver.o: \
+SDK/platform/drivers/src/lpspi/lpspi_master_driver.d: \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lpspi/lpspi_master_driver.c \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/lpspi_master_driver.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/lpspi_shared_function.h \
@@ -14,7 +14,7 @@ SDK/platform/drivers/src/lpspi/lpspi_master_driver.o: \
  c:\programs\nxp\s32ds_arm_v2.2\s32ds\software\s32sdk_s32k1xx_rtm_3.0.0\platform\drivers\src\clock\s32k1xx\clock_s32k1xx.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/osif/osif.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/FreeRTOS.h \
- C:/Users/nxf63339/workspaceS32DS.ARM.2.2/freertos_s32k144/Generated_Code/FreeRTOSConfig.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/FreeRTOSConfig.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/projdefs.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/portable.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/deprecated_definitions.h \
@@ -56,7 +56,7 @@ C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/osif
 
 C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/FreeRTOS.h:
 
-C:/Users/nxf63339/workspaceS32DS.ARM.2.2/freertos_s32k144/Generated_Code/FreeRTOSConfig.h:
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/FreeRTOSConfig.h:
 
 C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/rtos/FreeRTOS_S32K/Source/include/projdefs.h:
 

@@ -33,8 +33,8 @@ Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/system_S32K144.h \
  ../Generated_Code/pin_mux.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/pins_driver.h \
- ../Generated_Code/lpspiCom1.h ../Generated_Code/dmaController1.h \
- ../Generated_Code/lpuart1.h
+ ../Generated_Code/Send.h ../Generated_Code/dmaController1.h \
+ ../Generated_Code/TerminalDebug.h ../Generated_Code/Receive.h
 
 ../Generated_Code/clockMan1.h:
 
@@ -106,8 +106,10 @@ C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/
 
 C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/pins_driver.h:
 
-../Generated_Code/lpspiCom1.h:
+../Generated_Code/Send.h:
 
 ../Generated_Code/dmaController1.h:
 
-../Generated_Code/lpuart1.h:
+../Generated_Code/TerminalDebug.h:
+
+../Generated_Code/Receive.h:

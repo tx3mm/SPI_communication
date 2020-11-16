@@ -19,6 +19,6 @@ void ClockConfig(void);
 void GPIO_Init(void);
 void DMA_Init(void);
 void USART_Init(void);
-void SPI_Init(void);
+void SPI_Init(lpspi_state_t masterState, lpspi_state_t slaveState);
 
 #endif /* INIT_H_ */

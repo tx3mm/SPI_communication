@@ -127,10 +127,10 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="lpspiCom1" type="lpspi">
+  <Bean name="Send" type="lpspi">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="lpspiCom1" />
+      <Component_name v="Send" />
       <Device v="LPSPI0" />
       <Component_version v="S32K144_SDK01" />
     </Properties>
@@ -168,11 +168,25 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="lpuart1" type="lpuart">
+  <Bean name="TerminalDebug" type="lpuart">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="lpuart1" />
+      <Component_name v="TerminalDebug" />
       <Device v="LPUART0" />
+      <Component_version v="S32K144_SDK01" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="Receive" type="lpspi">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Receive" />
+      <Device v="LPSPI1" />
       <Component_version v="S32K144_SDK01" />
     </Properties>
     <Methods>

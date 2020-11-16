@@ -9,6 +9,9 @@
 #include "Cpu.h"
 #include "pin_mux.h"
 #include "init.h"
+#include "Send.h"
+#include "Receive.h"
+
 
 void ClockConfig(void){
 	CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
@@ -34,7 +37,11 @@ void USART_Init(void){
 
 }
 
-//TODO: Needs to be implemented
-void SPI_Init(void){
 
+//TODO: Needs to be implemented
+void SPI_Init(lpspi_state_t masterState, lpspi_state_t slaveState){
+	  /* Initialize LPSPI0 (Send)*/
+	  LPSPI_DRV_MasterInit(SEND, &masterState, &Send_MasterConfig0);
+	  /* Initialize LPSPI1 (Receive)*/
+	  LPSPI_DRV_SlaveInit(RECEIVE, &slaveState, &Receive_SlaveConfig0);
 }

@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32K1xx_15, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-11-16, 14:59, # CodeGen: 3
+**     Date/Time   : 2020-11-16, 17:23, # CodeGen: 4
 **     Contents    :
 **         CLOCK_DRV_Init                 - status_t CLOCK_DRV_Init(clock_manager_user_config_t const * config);
 **         CLOCK_DRV_GetFreq              - status_t CLOCK_DRV_GetFreq(clock_names_t clockName, uint32_t * frequency);

@@ -83,7 +83,9 @@
 
 /*Private includes*/
 #include "task_SPI_master.h"
+#include "task_SPI_slave.h"
 #include "defines.h"
+#include "init.h"
 
 
 /* Priorities at which the tasks are created. */
@@ -145,6 +147,11 @@ static QueueHandle_t xQueue = NULL;
 function. */
 static TimerHandle_t xButtonLEDTimer = NULL;
 
+/* SPI variables */
+lpspi_state_t masterState;
+lpspi_state_t slaveState;
+
+
 /*-----------------------------------------------------------*/
 
 void rtos_start( void )
@@ -162,7 +169,9 @@ void rtos_start( void )
 
 		xTaskCreate( prvQueueReceiveTask, "RX", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
 		xTaskCreate( prvQueueSendTask, "TX", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL );
-		xTaskCreate( SPITask_Master, "SPITask", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
+
+		xTaskCreate( SPITask_Master, "SPITask_Master", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
+		xTaskCreate( SPITask_Slave, "SPITask_Slave", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_RECEIVE_TASK_PRIORITY, NULL );
 
 		/* Create the software timer that is responsible for turning off the LED
 		if the button is not pushed within 5000ms, as described at the top of
@@ -288,6 +297,8 @@ static void prvSetupHardware( void )
     CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
     
     boardSetup();
+    SPI_Init(masterState, slaveState);
+
 
 	/* Change LED1, LED2 to outputs. */
 	PINS_DRV_SetPinsDirection(LED_GPIO,  (1 << LED1) | (1 << LED2));

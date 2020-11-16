@@ -13,19 +13,26 @@
 /* Personal includes*/
 #include "task_SPI_master.h"
 #include "lpspi_master_driver.h"
-#include "lpspiCom1.h"
+#include "Send.h"
 #include "lpspi_shared_function.h"
 #include "defines.h"
 #include "BoardDefines.h"
 #include "util.h"
 
+/* Local variables*/
+uint8_t masterDataSend;
+uint8_t masterDataReceive;
+
+
 void SPITask_Master(void * argument){
 	while(1){
 		printf("I am in SPI task Master!\n");
 		PINS_DRV_TogglePins(LED_External_GPIO, (1 << LED3_Anton));
-//		OSIF_TimeDelay(2000);
-		osDelay(2000);
 
+		LPSPI_DRV_MasterTransferBlocking(SEND, &masterDataSend, &masterDataReceive, BUFFER_SIZE, TIMEOUT);
+
+//		OSIF_TimeDelay(2000);
+		osDelay(1000);
 	}
 }
 

@@ -5,26 +5,29 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Generated_Code/Cpu.c \
+../Generated_Code/Receive.c \
+../Generated_Code/Send.c \
+../Generated_Code/TerminalDebug.c \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/dmaController1.c \
-../Generated_Code/lpspiCom1.c \
-../Generated_Code/lpuart1.c \
 ../Generated_Code/pin_mux.c 
 
 OBJS += \
 ./Generated_Code/Cpu.o \
+./Generated_Code/Receive.o \
+./Generated_Code/Send.o \
+./Generated_Code/TerminalDebug.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/dmaController1.o \
-./Generated_Code/lpspiCom1.o \
-./Generated_Code/lpuart1.o \
 ./Generated_Code/pin_mux.o 
 
 C_DEPS += \
 ./Generated_Code/Cpu.d \
+./Generated_Code/Receive.d \
+./Generated_Code/Send.d \
+./Generated_Code/TerminalDebug.d \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/dmaController1.d \
-./Generated_Code/lpspiCom1.d \
-./Generated_Code/lpuart1.d \
 ./Generated_Code/pin_mux.d 
 
 

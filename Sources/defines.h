@@ -16,5 +16,7 @@
 #define LED_External_PORT		 PORTE //Anton
 #define LED_External_PORT_PCC    PCC_PORTE_CLOCK //Anton
 
+#define BUFFER_SIZE 1U
+#define TIMEOUT 10U
 
 #endif /* DEFINES_H_ */

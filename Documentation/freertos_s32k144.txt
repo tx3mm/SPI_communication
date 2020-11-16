@@ -321,25 +321,25 @@ Module "FreeRTOS"  (component FreeRTOS)
    - FreeRTOS_xTaskCallApplicationTaskHook -Calls the hook function associated with xTask. Passing xTask as NULL has the effect 
                 of calling the Running tasks (the calling task) hook function.
 
-Module "lpspiCom1" (component lpspi)
-   - lpspiCom1_LPSPI_DRV_MasterGetDefaultConfig -Return default configuration for SPI master.
-   - lpspiCom1_LPSPI_DRV_MasterInit -Initializes a LPSPI instance for interrupt driven master mode operation.
-   - lpspiCom1_LPSPI_DRV_MasterDeinit -Shuts down a LPSPI instance.
-   - lpspiCom1_LPSPI_DRV_MasterSetDelay -Configures the LPSPI master mode bus timing delay options.
-   - lpspiCom1_LPSPI_DRV_MasterConfigureBus -Configures the LPSPI port physical parameters to access a device on the bus when 
-                the LSPI instance is configured for interrupt operation.
-   - lpspiCom1_LPSPI_DRV_SetPcs -Select the chip to communicate with.
-   - lpspiCom1_LPSPI_DRV_MasterTransferBlocking -Performs an interrupt driven blocking SPI master mode transfer.
-   - lpspiCom1_LPSPI_DRV_MasterTransfer -Performs an interrupt driven non-blocking SPI master mode transfer.
-   - lpspiCom1_LPSPI_DRV_MasterGetTransferStatus -Returns whether the previous interrupt driven transfer is completed.
-   - lpspiCom1_LPSPI_DRV_MasterAbortTransfer -Terminates an interrupt driven asynchronous transfer early.
-   - lpspiCom1_LPSPI_DRV_SlaveGetDefaultConfig -Return default configuration for SPI master.
-   - lpspiCom1_LPSPI_DRV_SlaveInit -Initializes a LPSPI instance for interrupt driven slave mode operation.
-   - lpspiCom1_LPSPI_DRV_SlaveDeinit -Shuts down an LPSPI instance interrupt mechanism.
-   - lpspiCom1_LPSPI_DRV_SlaveTransferBlocking -Transfers data on LPSPI bus using a blocking call.
-   - lpspiCom1_LPSPI_DRV_SlaveTransfer -Starts the transfer data on LPSPI bus using a non-blocking call.
-   - lpspiCom1_LPSPI_DRV_SlaveAbortTransfer -Aborts the transfer that started by a non-blocking call transfer function.
-   - lpspiCom1_LPSPI_DRV_SlaveGetTransferStatus -Returns whether the previous transfer is finished.
+Module "Send"      (component lpspi)
+   - Send_LPSPI_DRV_MasterGetDefaultConfig -Return default configuration for SPI master.
+   - Send_LPSPI_DRV_MasterInit -Initializes a LPSPI instance for interrupt driven master mode operation.
+   - Send_LPSPI_DRV_MasterDeinit -Shuts down a LPSPI instance.
+   - Send_LPSPI_DRV_MasterSetDelay -Configures the LPSPI master mode bus timing delay options.
+   - Send_LPSPI_DRV_MasterConfigureBus -Configures the LPSPI port physical parameters to access a device on the bus when the 
+                LSPI instance is configured for interrupt operation.
+   - Send_LPSPI_DRV_SetPcs -Select the chip to communicate with.
+   - Send_LPSPI_DRV_MasterTransferBlocking -Performs an interrupt driven blocking SPI master mode transfer.
+   - Send_LPSPI_DRV_MasterTransfer -Performs an interrupt driven non-blocking SPI master mode transfer.
+   - Send_LPSPI_DRV_MasterGetTransferStatus -Returns whether the previous interrupt driven transfer is completed.
+   - Send_LPSPI_DRV_MasterAbortTransfer -Terminates an interrupt driven asynchronous transfer early.
+   - Send_LPSPI_DRV_SlaveGetDefaultConfig -Return default configuration for SPI master.
+   - Send_LPSPI_DRV_SlaveInit -Initializes a LPSPI instance for interrupt driven slave mode operation.
+   - Send_LPSPI_DRV_SlaveDeinit -Shuts down an LPSPI instance interrupt mechanism.
+   - Send_LPSPI_DRV_SlaveTransferBlocking -Transfers data on LPSPI bus using a blocking call.
+   - Send_LPSPI_DRV_SlaveTransfer -Starts the transfer data on LPSPI bus using a non-blocking call.
+   - Send_LPSPI_DRV_SlaveAbortTransfer -Aborts the transfer that started by a non-blocking call transfer function.
+   - Send_LPSPI_DRV_SlaveGetTransferStatus -Returns whether the previous transfer is finished.
 
 Module "dmaController1" (component edma)
    - dmaController1_EDMA_DRV_Init -Initializes the eDMA module.
@@ -393,33 +393,53 @@ Module "osif1"     (component osif)
    - osif1_OSIF_GetMilliseconds -Returns the number of miliseconds elapsed since starting the internal timer or starting the 
                 scheduler.
 
-Module "lpuart1"   (component lpuart)
-   - lpuart1_LPUART_DRV_GetDefaultConfig -Initializes the LPUART configuration structure with default values.
-   - lpuart1_LPUART_DRV_Init -Initializes an LPUART operation instance.
-   - lpuart1_LPUART_DRV_Deinit -Shuts down the LPUART by disabling interrupts and transmitter/receiver.
-   - lpuart1_LPUART_DRV_InstallRxCallback -Installs callback function for the LPUART receive.
-   - lpuart1_LPUART_DRV_InstallTxCallback -Installs callback function for the LPUART transmit.
-   - lpuart1_LPUART_DRV_SendDataBlocking -Sends data out through the LPUART module using a blocking method.
-   - lpuart1_LPUART_DRV_SendDataPolling -Send out multiple bytes of data using polling method.
-   - lpuart1_LPUART_DRV_SendData -Sends data out through the LPUART module using a non-blocking method. This enables an a-sync 
-                method for transmitting data. When used with a non-blocking receive, the LPUART can perform a full duplex 
-                operation. Non-blocking means that the function returns immediately. The application has to get the transmit 
-                status to know when the transmit is complete.
-   - lpuart1_LPUART_DRV_GetTransmitStatus -Returns whether the previous transmit is complete.
-   - lpuart1_LPUART_DRV_AbortSendingData -Terminates a non-blocking transmission early.
-   - lpuart1_LPUART_DRV_ReceiveDataBlocking -Gets data from the LPUART module by using a blocking method. Blocking means that 
-                the function does not return until the receive is complete.
-   - lpuart1_LPUART_DRV_ReceiveDataPolling -Receive multiple bytes of data using polling method.
-   - lpuart1_LPUART_DRV_ReceiveData -Gets data from the LPUART module by using a non-blocking method. This enables an a-sync 
-                method for receiving data. When used with a non-blocking transmission, the LPUART can perform a full duplex 
-                operation. Non-blocking means that the function returns immediately. The application has to get the receive 
-                status to know when the receive is complete.
-   - lpuart1_LPUART_DRV_GetReceiveStatus -Returns whether the previous receive is complete.
-   - lpuart1_LPUART_DRV_AbortReceivingData -Terminates a non-blocking receive early.
-   - lpuart1_LPUART_DRV_SetBaudRate -Configures the LPUART baud rate.
-   - lpuart1_LPUART_DRV_GetBaudRate -Returns the LPUART baud rate.
-   - lpuart1_LPUART_DRV_SetTxBuffer -Sets the internal driver reference to the tx buffer.
-   - lpuart1_LPUART_DRV_SetRxBuffer -Sets the internal driver reference to the rx buffer.
+Module "TerminalDebug" (component lpuart)
+   - TerminalDebug_LPUART_DRV_GetDefaultConfig -Initializes the LPUART configuration structure with default values.
+   - TerminalDebug_LPUART_DRV_Init -Initializes an LPUART operation instance.
+   - TerminalDebug_LPUART_DRV_Deinit -Shuts down the LPUART by disabling interrupts and transmitter/receiver.
+   - TerminalDebug_LPUART_DRV_InstallRxCallback -Installs callback function for the LPUART receive.
+   - TerminalDebug_LPUART_DRV_InstallTxCallback -Installs callback function for the LPUART transmit.
+   - TerminalDebug_LPUART_DRV_SendDataBlocking -Sends data out through the LPUART module using a blocking method.
+   - TerminalDebug_LPUART_DRV_SendDataPolling -Send out multiple bytes of data using polling method.
+   - TerminalDebug_LPUART_DRV_SendData -Sends data out through the LPUART module using a non-blocking method. This enables an 
+                a-sync method for transmitting data. When used with a non-blocking receive, the LPUART can perform a full 
+                duplex operation. Non-blocking means that the function returns immediately. The application has to get the 
+                transmit status to know when the transmit is complete.
+   - TerminalDebug_LPUART_DRV_GetTransmitStatus -Returns whether the previous transmit is complete.
+   - TerminalDebug_LPUART_DRV_AbortSendingData -Terminates a non-blocking transmission early.
+   - TerminalDebug_LPUART_DRV_ReceiveDataBlocking -Gets data from the LPUART module by using a blocking method. Blocking means 
+                that the function does not return until the receive is complete.
+   - TerminalDebug_LPUART_DRV_ReceiveDataPolling -Receive multiple bytes of data using polling method.
+   - TerminalDebug_LPUART_DRV_ReceiveData -Gets data from the LPUART module by using a non-blocking method. This enables an 
+                a-sync method for receiving data. When used with a non-blocking transmission, the LPUART can perform a full 
+                duplex operation. Non-blocking means that the function returns immediately. The application has to get the 
+                receive status to know when the receive is complete.
+   - TerminalDebug_LPUART_DRV_GetReceiveStatus -Returns whether the previous receive is complete.
+   - TerminalDebug_LPUART_DRV_AbortReceivingData -Terminates a non-blocking receive early.
+   - TerminalDebug_LPUART_DRV_SetBaudRate -Configures the LPUART baud rate.
+   - TerminalDebug_LPUART_DRV_GetBaudRate -Returns the LPUART baud rate.
+   - TerminalDebug_LPUART_DRV_SetTxBuffer -Sets the internal driver reference to the tx buffer.
+   - TerminalDebug_LPUART_DRV_SetRxBuffer -Sets the internal driver reference to the rx buffer.
+
+Module "Receive"   (component lpspi)
+   - Receive_LPSPI_DRV_MasterGetDefaultConfig -Return default configuration for SPI master.
+   - Receive_LPSPI_DRV_MasterInit -Initializes a LPSPI instance for interrupt driven master mode operation.
+   - Receive_LPSPI_DRV_MasterDeinit -Shuts down a LPSPI instance.
+   - Receive_LPSPI_DRV_MasterSetDelay -Configures the LPSPI master mode bus timing delay options.
+   - Receive_LPSPI_DRV_MasterConfigureBus -Configures the LPSPI port physical parameters to access a device on the bus when the 
+                LSPI instance is configured for interrupt operation.
+   - Receive_LPSPI_DRV_SetPcs -Select the chip to communicate with.
+   - Receive_LPSPI_DRV_MasterTransferBlocking -Performs an interrupt driven blocking SPI master mode transfer.
+   - Receive_LPSPI_DRV_MasterTransfer -Performs an interrupt driven non-blocking SPI master mode transfer.
+   - Receive_LPSPI_DRV_MasterGetTransferStatus -Returns whether the previous interrupt driven transfer is completed.
+   - Receive_LPSPI_DRV_MasterAbortTransfer -Terminates an interrupt driven asynchronous transfer early.
+   - Receive_LPSPI_DRV_SlaveGetDefaultConfig -Return default configuration for SPI master.
+   - Receive_LPSPI_DRV_SlaveInit -Initializes a LPSPI instance for interrupt driven slave mode operation.
+   - Receive_LPSPI_DRV_SlaveDeinit -Shuts down an LPSPI instance interrupt mechanism.
+   - Receive_LPSPI_DRV_SlaveTransferBlocking -Transfers data on LPSPI bus using a blocking call.
+   - Receive_LPSPI_DRV_SlaveTransfer -Starts the transfer data on LPSPI bus using a non-blocking call.
+   - Receive_LPSPI_DRV_SlaveAbortTransfer -Aborts the transfer that started by a non-blocking call transfer function.
+   - Receive_LPSPI_DRV_SlaveGetTransferStatus -Returns whether the previous transfer is finished.
 
 Module "Cpu"       (component S32K144_100)
    - Cpu_SystemInit -This function disables the watchdog, enables FPU and the power mode protection. SystemInit is called from 

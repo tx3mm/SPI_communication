@@ -35,11 +35,14 @@ Sources/init.o: ../Sources/init.c \
  C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Cpu.h \
  C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/pin_mux.h \
  C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/pins_driver.h \
- C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/lpspiCom1.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Send.h \
  C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/dmaController1.h \
- C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/lpuart1.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/TerminalDebug.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Receive.h \
  C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/pin_mux.h \
- ../Sources/init.h
+ ../Sources/init.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Send.h \
+ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Receive.h
 
 C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Cpu.h:
 
@@ -113,12 +116,18 @@ C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ swit
 
 C:/Programs/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/inc/pins_driver.h:
 
-C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/lpspiCom1.h:
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Send.h:
 
 C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/dmaController1.h:
 
-C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/lpuart1.h:
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/TerminalDebug.h:
+
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Receive.h:
 
 C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/pin_mux.h:
 
 ../Sources/init.h:
+
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Send.h:
+
+C:/Users/nxf63339/Documents/Differential\ Probe/Data\ acquisition/MUX\ and\ switches/Control\ logic/S32K\ NXP/S32\ Projects/freertos_s32k144_NEW/Generated_Code/Receive.h:

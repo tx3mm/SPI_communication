@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32K1xx_15
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-11-16, 14:45, # CodeGen: 1
+**     Date/Time   : 2020-11-16, 17:57, # CodeGen: 5
 **     Abstract    :
 **
 **     Settings    :
@@ -417,8 +417,8 @@
 **              Peripheral Type LPSPI                      : 
 **                Custom name                              : LPSPI0
 **                LPSPI0                                   : 
-**                  Peripheral Chip Select 0               : <Automatic>
-**                  Direction                              : <Automatic>
+**                  Peripheral Chip Select 0               : PTB0
+**                  Direction                              : Output
 **                  Peripheral Chip Select 1               : <Automatic>
 **                  Direction                              : <Automatic>
 **                  Peripheral Chip Select 2               : <Automatic>
@@ -1583,7 +1583,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 10
+#define NUM_OF_CONFIGURED_PINS 11
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];
